@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-12-12T16:04:41.467393",
+  "config": "ConfigManager(config_file='config.json', sensor_csv='sensors_data.txt', algorithm_csv='algorithms_data.txt', infrastructure_csv='infrastructure_data.txt', cost_benefit_csv='cost_benefit_data.txt', road_network_length_km=500.0, planning_horizon_years=10, budget_cap_usd=10000000, min_recall_threshold=0.6, max_latency_seconds=500.0, max_disruption_hours=300.0, max_energy_kwh_year=200000, min_mtbf_hours=1500, max_carbon_emissions_kgCO2e_year=300000, daily_wage_per_person=1500, fos_sensor_spacing_km=0.1, depreciation_rate=0.1, scenario_type='urban', carbon_intensity_factor=0.417, apply_seasonal_adjustments=True, traffic_volume_hourly=2000, default_lane_closure_ratio=0.3, class_imbalance_penalties={'Traditional': 0.05, 'ML': 0.02, 'DL': 0.01, 'PC': 0.03}, network_quality_factors={'rural': {'Fiber': 0.8, '5G': 0.7, '4G': 0.9, 'LoRaWAN': 1.0}, 'urban': {'Fiber': 1.0, '5G': 1.0, '4G': 1.0, 'LoRaWAN': 0.9}, 'mixed': {'Fiber': 0.9, '5G': 0.85, '4G': 0.95, 'LoRaWAN': 0.95}}, redundancy_multipliers={'Cloud': 10.0, 'OnPremise': 1.5, 'Edge': 2.0, 'Hybrid': 5.0}, n_objectives=6, n_partitions=6, population_size=512, n_generations=200, crossover_prob=0.9, crossover_eta=20, mutation_eta=20, random_seed=42, n_random_samples=3000, grid_resolution=5, weight_combinations=50, use_parallel=True, n_processes=19, output_dir=WindowsPath('results'), log_dir=WindowsPath('results/logs'), data_dir=WindowsPath('results/data'), figure_dir=WindowsPath('results/figures'), validation_dir=WindowsPath('results/validation_results'), figure_format=['png', 'pdf'], data_retention_years=3, enable_debug_output=True)",
+  "keys": [
+    "nsga3",
+    "baselines"
+  ]
+}

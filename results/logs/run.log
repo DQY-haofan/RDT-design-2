@@ -1,0 +1,157 @@
+2025-12-12 15:49:16,014 - INFO - >>> RUNNING SINGLE EXPERIMENT <<<
+2025-12-12 15:49:16,014 - INFO - 配置摘要:
+  网络: 500.0 km
+  预算: $10,000,000
+  目标数: 6
+  分区数(p): 6
+  算法: NSGA-III
+  种群: 512
+  代数: 200
+  种子: 42
+  输出目录: results
+2025-12-12 15:49:16,017 - INFO - 正在从 CSV 文件填充本体...
+2025-12-12 15:49:16,049 - INFO - 本体填充完成，包含 476 个三元组。
+2025-12-12 15:49:16,057 - ERROR - Fatal error: cannot import name 'EnhancedFitnessEvaluatorV3' from 'evaluation' (C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\evaluation\__init__.py)
+Traceback (most recent call last):
+  File "F:\Github-repositories\RDT-design-2\main.py", line 76, in main
+    optimizer = RMTwinOptimizer(ontology_graph, config)
+  File "F:\Github-repositories\RDT-design-2\optimization_core.py", line 45, in __init__
+    from evaluation import EnhancedFitnessEvaluatorV3
+ImportError: cannot import name 'EnhancedFitnessEvaluatorV3' from 'evaluation' (C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\evaluation\__init__.py)
+2025-12-12 15:53:38,688 - INFO - >>> SINGLE EXPERIMENT MODE <<<
+2025-12-12 15:53:38,688 - INFO - 配置摘要:
+  输出目录: results
+  子目录: data/, figures/, logs/, validation_results/
+  图表格式: ['png', 'pdf']
+  种子: 42
+2025-12-12 15:53:38,689 - INFO - 正在从 CSV 文件填充本体...
+2025-12-12 15:53:38,700 - INFO - 本体填充完成，包含 476 个三元组。
+2025-12-12 15:53:38,702 - INFO - 缓存本体组件...
+2025-12-12 15:53:39,863 - INFO - 配置 NSGA-III: Pop=512, RefDirs=462
+2025-12-12 15:53:39,863 - INFO - 开始优化 (Seed=42)...
+2025-12-12 15:54:20,007 - INFO - >>> SINGLE EXPERIMENT MODE <<<
+2025-12-12 15:54:20,008 - INFO - 配置摘要:
+  输出目录: results
+  子目录: data/, figures/, logs/, validation_results/
+  图表格式: ['png', 'pdf']
+  种子: 42
+2025-12-12 15:54:20,008 - INFO - 正在从 CSV 文件填充本体...
+2025-12-12 15:54:20,009 - ERROR - 填充本体时出错: [Errno 2] No such file or directory: 'sensors_data.txt'
+2025-12-12 15:54:20,009 - ERROR - Fatal error: [Errno 2] No such file or directory: 'sensors_data.txt'
+Traceback (most recent call last):
+  File "F:\Github-repositories\RDT-design-2\main.py", line 57, in main
+    ontology_graph = ontology_manager.populate_from_csv_files(
+        config.sensor_csv, config.algorithm_csv,
+        config.infrastructure_csv, config.cost_benefit_csv
+    )
+  File "F:\Github-repositories\RDT-design-2\ontology_manager.py", line 53, in populate_from_csv_files
+    self._load_sensors(sensor_csv)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "F:\Github-repositories\RDT-design-2\ontology_manager.py", line 64, in _load_sensors
+    df = pd.read_csv(filepath)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'sensors_data.txt'
+2025-12-12 15:54:47,366 - INFO - >>> SINGLE EXPERIMENT MODE <<<
+2025-12-12 15:54:47,367 - INFO - 配置摘要:
+  输出目录: results
+  子目录: data/, figures/, logs/, validation_results/
+  图表格式: ['png', 'pdf']
+  种子: 42
+2025-12-12 15:54:47,367 - INFO - 正在从 CSV 文件填充本体...
+2025-12-12 15:54:47,368 - ERROR - 填充本体时出错: [Errno 2] No such file or directory: 'sensors_data.txt'
+2025-12-12 15:54:47,368 - ERROR - Fatal error: [Errno 2] No such file or directory: 'sensors_data.txt'
+Traceback (most recent call last):
+  File "F:\Github-repositories\RDT-design-2\main.py", line 57, in main
+    ontology_graph = ontology_manager.populate_from_csv_files(
+        config.sensor_csv, config.algorithm_csv,
+        config.infrastructure_csv, config.cost_benefit_csv
+    )
+  File "F:\Github-repositories\RDT-design-2\ontology_manager.py", line 53, in populate_from_csv_files
+    self._load_sensors(sensor_csv)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "F:\Github-repositories\RDT-design-2\ontology_manager.py", line 64, in _load_sensors
+    df = pd.read_csv(filepath)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'sensors_data.txt'
+2025-12-12 15:55:52,860 - INFO - >>> SINGLE EXPERIMENT MODE <<<
+2025-12-12 15:55:52,860 - INFO - 配置摘要:
+  输出目录: results
+  子目录: data/, figures/, logs/, validation_results/
+  图表格式: ['png', 'pdf']
+  种子: 42
+2025-12-12 15:55:52,861 - INFO - 正在从 CSV 文件填充本体...
+2025-12-12 15:55:52,875 - INFO - 本体填充完成，包含 476 个三元组。
+2025-12-12 15:55:52,875 - INFO - 缓存本体组件...
+2025-12-12 15:55:53,915 - INFO - 配置 NSGA-III: Pop=512, RefDirs=462
+2025-12-12 15:55:53,915 - INFO - 开始优化 (Seed=42)...
+2025-12-12 15:58:04,377 - INFO - 缓存本体组件...
+2025-12-12 15:58:05,300 - INFO - Running Random Search (Seed=42, N=3000)
+2025-12-12 15:58:05,346 - INFO - Running Weighted Sum (Seed=42)
+2025-12-12 15:58:08,294 - INFO - Running Grid Search...
+2025-12-12 15:58:08,296 - INFO - Running Expert Heuristic...
+2025-12-12 15:58:08,332 - INFO - 正在生成图表 (格式: ['png', 'pdf'])...
+2025-12-12 15:58:08,493 - WARNING - Viz error: seaborn.utils._scatter_legend_artist() got multiple values for keyword argument 'label'
+2025-12-12 15:58:08,494 - INFO - Summary saved to results\summary_report.json
+2025-12-12 16:02:26,223 - INFO - >>> SINGLE EXPERIMENT MODE <<<
+2025-12-12 16:02:26,223 - INFO - 配置摘要:
+  输出目录: results
+  子目录: data/, figures/, logs/, validation_results/
+  图表格式: ['png', 'pdf']
+  种子: 42
+2025-12-12 16:02:26,224 - INFO - 正在从 CSV 文件填充本体...
+2025-12-12 16:02:26,238 - INFO - 本体填充完成，包含 476 个三元组。
+2025-12-12 16:02:26,238 - INFO - 缓存本体组件...
+2025-12-12 16:02:27,330 - INFO - 配置 NSGA-III: Pop=512, RefDirs=462
+2025-12-12 16:02:27,330 - INFO - 开始优化 (Seed=42)...
+2025-12-12 16:04:35,311 - INFO - 缓存本体组件...
+2025-12-12 16:04:36,271 - INFO - Running Random Search (Seed=42, N=3000)
+2025-12-12 16:04:36,322 - INFO - Running Weighted Sum (Seed=42)
+2025-12-12 16:04:40,159 - INFO - Running Grid Search...
+2025-12-12 16:04:40,161 - INFO - Running Expert Heuristic...
+2025-12-12 16:04:40,198 - INFO - 正在生成图表 (格式: ['png', 'pdf'])...
+2025-12-12 16:04:41,467 - INFO - 图表生成流程结束，检查目录: results\figures
+2025-12-12 16:04:41,467 - INFO - Summary saved to results\summary_report.json
